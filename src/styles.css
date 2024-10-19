@@ -28,7 +28,7 @@
 }
 
 body {
-  background: url("assets/pexels-fariphotography-905847.jpg");
+  background: url("assets/pexels-arthurbrognoli-3343622.jpg");
   background-size: cover;
   overflow: hidden;
   display: flex;
@@ -59,7 +59,7 @@ header {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--dark);
+  color: var(--light);
   font-weight: 600;
   font-size: medium;
   padding-bottom: 5px; /* Add space to account for hover effect */
@@ -166,4 +166,5 @@ header {
   flex-direction: column;
   align-items: center;
   position: fixed;
+  color: var(--light)
 }
