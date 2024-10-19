@@ -1,34 +1,44 @@
+import { renderMenu } from "./menu";
+import { renderFooter } from "./footer";
+
 function renderHome() {
-    const content = document.getElementById('content');
+  const content = document.getElementById("content");
+  content.innerHTML = "";
 
-    const home = document.createElement('div');
-    content.appendChild(home);
-    home.classList.add('main');
-    
-    const greeting = document.createElement('h1');
-    greeting.textContent = 'Buongiorno';
-    greeting.classList.add('greeting');
-    home.appendChild(greeting);
+  const home = document.createElement("div");
+  content.appendChild(home);
+  home.classList.add("main");
 
-    const restaurantName = document.createElement('h1');
-    restaurantName.textContent = 'La Dolce Vita';
-    restaurantName.classList.add('main-headline');
-    home.appendChild(restaurantName);
+  const greeting = document.createElement("h1");
+  greeting.textContent = "Buongiorno";
+  greeting.classList.add("greeting");
+  home.appendChild(greeting);
 
-    const divider = document.createElement('div');
-    divider.classList.add('main-divider');
-    home.appendChild(divider);
+  const restaurantName = document.createElement("h1");
+  restaurantName.textContent = "La Dolce Vita";
+  restaurantName.classList.add("main-headline");
+  home.appendChild(restaurantName);
 
-    const description = document.createElement('h2');
-    description.textContent = 'Authentic Neapolitan Pizza';
-    description.classList.add('description');
-    home.appendChild(description)
+  const divider = document.createElement("div");
+  divider.classList.add("main-divider");
+  home.appendChild(divider);
 
-    const viewMenu = document.createElement('button');
-    viewMenu.textContent = 'View Menu';
-    viewMenu.classList.add('view-menu');
-    viewMenu.setAttribute('id','menu-btn');
-    home.appendChild(viewMenu)
+  const description = document.createElement("h2");
+  description.textContent = "Authentic Neapolitan Pizza";
+  description.classList.add("description");
+  home.appendChild(description);
+
+  const viewMenu = document.createElement("button");
+  viewMenu.textContent = "View Menu";
+  viewMenu.classList.add("view-menu");
+  viewMenu.setAttribute("id", "menu-btn");
+  home.appendChild(viewMenu);
+
+  viewMenu.addEventListener("click",() => {
+    content.innerHTML = "";
+    renderMenu();
+    renderFooter();
+  })
 }
 
 export { renderHome };
