@@ -6,7 +6,7 @@ function renderFooter() {
   content.appendChild(footer);
 
   const copyright = document.createElement("p");
-  copyright.textContent = "© 2024 deucenn";
+  copyright.textContent = "© 2024 Raphael Bienholz";
   footer.appendChild(copyright);
 }
 

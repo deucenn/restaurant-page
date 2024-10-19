@@ -3,7 +3,7 @@ function renderHome() {
 
     const home = document.createElement('div');
     content.appendChild(home);
-    home.classList.add('home');
+    home.classList.add('main');
     
     const greeting = document.createElement('h1');
     greeting.textContent = 'Buongiorno';
@@ -12,11 +12,11 @@ function renderHome() {
 
     const restaurantName = document.createElement('h1');
     restaurantName.textContent = 'La Dolce Vita';
-    restaurantName.classList.add('restaurant-name');
+    restaurantName.classList.add('main-headline');
     home.appendChild(restaurantName);
 
     const divider = document.createElement('div');
-    divider.classList.add('divider');
+    divider.classList.add('main-divider');
     home.appendChild(divider);
 
     const description = document.createElement('h2');
