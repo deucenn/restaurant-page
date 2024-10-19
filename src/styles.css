@@ -33,6 +33,7 @@ body {
   overflow: hidden;
   display: flex;
   display: grid;
+  background-position: center;
 }
 
 /* Navbar Styling */
